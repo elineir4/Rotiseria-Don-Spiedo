@@ -247,9 +247,7 @@ function abrirMenuPizzasPromocion(promocion) {
 
 // Función para agregar pizza a la promoción
 function agregarPizzaPromocion(nombre, precio) {
-    // Verificar que no se haya seleccionado ya esta pizza
-    if (pizzasSeleccionadas.find(p => p.name === nombre)) return;
-    
+    // Permitir seleccionar la misma pizza múltiples veces
     if (pizzasSeleccionadas.length >= 3) return;
     
     pizzasSeleccionadas.push({ name: nombre, price: precio });

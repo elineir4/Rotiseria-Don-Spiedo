@@ -47,6 +47,18 @@ nav a,
     padding: 20px 18px 70px;
 }
 
+.encabezado::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to top, var(--fondo) 0%, transparent 100%);
+    pointer-events: none;
+    z-index: 1;
+}
+
 .barraNavegacion {
     max-width: 1100px;
     margin: 0 auto;
@@ -67,8 +79,8 @@ nav a,
 }
 
 .logoMarca {
-    width: 50px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     object-fit: cover;
 }
 
